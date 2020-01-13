@@ -5,8 +5,6 @@
 # Pull base image.
 FROM ubuntu:16.04
 
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
 # Install Java.
 RUN \
   apt-get -yqq update && \
